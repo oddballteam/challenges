@@ -6,8 +6,8 @@ This is an open-book test, so Google away, but please don't copy your work from 
 
 What challenge should I be doing?
 
-- Backend/Rails Engineers should try [EFIN Calculator](/efin-calculator)
-- Front End Engineeers [Address Book](/address-book)
+- Backend/Rails Engineers should try [EFIN Calculator](/efin-calculator#efin-calculator)
+- Front End Engineers [Address Book](/address-book)
 - Devops Engineers [Server Config](/server-config)
 
 ## Getting help
