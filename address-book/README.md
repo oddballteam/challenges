@@ -41,9 +41,11 @@ After tapping a user, you should be able to hit edit, change their information a
 ![](mockups/expanded.png)
 
 
-Searching the address book, **note** this is not just a client side filter but isntead needs to hit the db
+Searching the address book,
 
 ![](mockups/Searching.png)
+
+ **note** this is not just a client side filter but instead needs to hit the db
 
 
 ## Tips and Tricks
