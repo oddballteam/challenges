@@ -2,16 +2,18 @@
 
 ## Requirements
 
-nodejs installed
+`nodejs` installed
 
 to run the API server, `npm install`, `npm start`
 
-[API docs here](#API)
+[API docs here](#api)
 
 ## Getting Started
 
 2 Frameworks are setup and configured for use already, feel free to also do the challenge in Vuejs or Knockout/Backbone if you can set things up
+
 Create react app is setup in the `client-react` folder, you should be able to run `npm install`, `npm start` in there
+
 ng-cli is set up with proxy server as well, its in the `client-react` folder, `npm install`, `npm start` in there
 
 ## Goals
@@ -48,7 +50,7 @@ Searching the address book, **note** this is not just a client side filter but i
 
 - The api takes an offset parameter. Implement either pagination, or some sort of infinite scroll.
 - This design is just a general guideline of what the app needs to do, there are obviously gaps (editing state, delete state) that are missing from the wireframes, use your best judgement
-- Search is crucial for the app but as of now, the api can only search on first and last name
+- Search is crucial for the app. As of now, the api can only search on first and last name
 - You can test the api by [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/60bf8806cd83b8503e2f)
 
 ## API
