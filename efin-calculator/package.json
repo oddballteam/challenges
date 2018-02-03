@@ -1,0 +1,21 @@
+{
+  "name": "hw_challenge_rails",
+  "private": true,
+  "dependencies": {
+    "@cmsgov/design-system-core": "^1.8.0",
+    "@cmsgov/design-system-layout": "^1.8.0"
+  },
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
