@@ -1,4 +1,4 @@
-# Oddball Homework Challenge
+# Oddball Tech Challenge
 
 This is an open-book test, so Google away, but please don't copy your work from pre-existing solutions you may find or ask others to help you complete the exercises. Solutions should be able to be run on a UNIX command line (Linux/Mac).
 
