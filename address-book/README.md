@@ -12,9 +12,9 @@ to run the API server, `npm install`, `npm start`
 
 2 Frameworks are setup and configured for use already, feel free to also do the challenge in Vuejs or Knockout/Backbone if you can set things up
 
-Create react app is setup in the `client-react` folder, you should be able to run `npm install`, `npm start` in there
+Create react app is setup in the `client-react` folder, you should be able to run `npm install`, `npm start` in there. I havent ejected, feel free to eject if you need to
 
-ng-cli is set up with proxy server as well, its in the `client-react` folder, `npm install`, `npm start` in there
+ng-cli is set up with proxy server as well, its in the `client-react` folder, `npm install`, `npm start` in there. I have not modified the starting config other than adding the proxy to the API
 
 ## Goals
 
