@@ -3,5 +3,3 @@
   become: True
   tasks:
     - include: tasks/deps.yml
-
-    # your code goes here ...

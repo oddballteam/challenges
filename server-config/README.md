@@ -6,49 +6,21 @@ You'll need [Vagrant](https://www.vagrantup.com/) and [Ansible](https://docs.ans
 
 ### The task(s)
 
-Generally, your submission should demonstrate good security practices. Show us your understanding of security best-practices: TLS/SSL settings in your nginx configuration, how you manage third-party dependencies, and restrict access to sensitive files.
+Your submission should demonstrate best practices in regards to building and deploying a standard php nginx appliation, installing some packages, and starting the application up. 
 
-#### Part one
+The application has a few requirements
+* nginx installed and configured
+* php-fpm configured with nginx
+* mysql installed and secured
+* elasticsearch installed and running
+* composer packages installed and running
 
-Complete the `config/nginx.conf` by writing a `server` directive(s) that proxies to the upstream `application`.
-
-Requirements:
-
-- Nginx should accept requests on ports 80 and 443
-- All `http` requests should permanently redirect to their `https` equivalent
-- Use the provided `files/self-signed.crt` and `files/self-signed.key` for your SSL configuration
-- Your SSL configuration should use modern, secure protocols and ciphers
-- Nginx should proxy requests to the application using an `upstream` directive
-- Pass headers `X-Forwarded-For` and `X-Real-IP` to the upstream application with appropriate values
-
-#### Part two
-
-Complete `playbook.yml` such that it:
-
-- Installs nginx 
-- Copies `config/nginx.conf`, `config/sample-app.service` `files/self-signed.key` and `files/self-signed.crt` to appropriate locations on the destination box
-- Ensure appropriate file permissions are set for each of the three files mentioned above
-- Copies and unzips/untars the contents of application.zip to `/opt/application/` on the destination box
-- Configure the sample-app.service file to run the application as a systemd service
-- Starts nginx using the configuration you completed and copied to the box
-
-### Checking your work
-
-You can test that your playbook works by running `./provision.sh`.
-
-Be aware that `provision.sh` destroys and recreates the Vagrant box each time it is run.
-
-A working configuration will render:
-
-```
-Pass: status code is 200
-Pass: X-Forwarded-For is present and not 'None'
-Pass: X-Real-IP is present and not 'None'
-Pass: found "It's easier to ask forgiveness than it is to get permission." in response
-```
 
 ### Tips & Guidance:
 
+- do not use ansible-galaxy for this, its overkill
+- feel free to copy roles for specific things, but not a whole role for the application
+- the application reads from a `.env` file, and is looking for `DB_HOST`, `DB_USER`, and `DB_PASS`
 - Do not alter the `Vagrantfile`.
 - Do not include `.vagrant/`, `.retry` files, or other detritus.
 - Do add notes on running your solution, or why you choose a particular solution, in a COMMENTS.md file.
