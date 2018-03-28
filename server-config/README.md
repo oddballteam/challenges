@@ -4,6 +4,8 @@
 
 You'll need [Vagrant](https://www.vagrantup.com/) and [Ansible](https://docs.ansible.com/ansible/intro_installation.html) for this exercise.
 
+*please install vagrant host manager to check your work* `vagrant plugin install vagrant-hostmanager`
+
 ### The task(s)
 
 Your submission should demonstrate best practices in regards to building and deploying a standard php nginx appliation, installing some packages, and starting the application up. 
@@ -15,6 +17,8 @@ The application has a few requirements
 * elasticsearch installed and running
 * composer packages installed and running
 
+The server should be available via challenge.local on your machine in order to test
+
 
 ### Tips & Guidance:
 
@@ -25,3 +29,4 @@ The application has a few requirements
 - Do not include `.vagrant/`, `.retry` files, or other detritus.
 - Do add notes on running your solution, or why you choose a particular solution, in a COMMENTS.md file.
 - Avoid chaining commands using `|` and `&&` in your `playbook.yml`
+
