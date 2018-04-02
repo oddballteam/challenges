@@ -13,10 +13,11 @@ $hosts = [
 ];
 
 $client = Elasticsearch\ClientBuilder::create()
-									->setLogger($logger);
-									->setHosts($hosts);
-									->build();
-$host = getenv("DB_HOST")
+$client->setLogger($logger);
+$client->setHosts($hosts);
+$client->build();
+
+$host = getenv("DB_HOST");
 $user = getenv("DB_USER");
 $pass = getenv("DB_PASS");
 $db   = 'test';
