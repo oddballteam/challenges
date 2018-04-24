@@ -12,7 +12,7 @@ $hosts = [
     ]
 ];
 
-$client = Elasticsearch\ClientBuilder::create()
+$client = Elasticsearch\ClientBuilder::create();
 $client->setLogger($logger);
 $client->setHosts($hosts);
 $client->build();
