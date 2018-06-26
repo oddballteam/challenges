@@ -4,7 +4,7 @@
 
 `nodejs` installed
 
-to run the API server, `npm install`, `npm start`
+to run the API server, `npm install`, `npm start` -- you may need to `npm install sqlite3@latest` if you have errors starting the API
 
 [API docs here](#api)
 
@@ -12,7 +12,7 @@ to run the API server, `npm install`, `npm start`
 
 2 Frameworks are setup and configured for use already, feel free to also do the challenge in Vuejs or Knockout/Backbone if you can set things up
 
-Create react app is setup in the `client-react` folder, you should be able to run `npm install`, `npm start` in there. I havent ejected, feel free to eject if you need to
+Create react app is setup in the `client-react` folder, you should be able to run `npm install`, `npm start` in there. I haven't ejected, feel free to eject if you need to
 
 ng-cli is set up with proxy server as well, its in the `client-react` folder, `npm install`, `npm start` in there. I have not modified the starting config other than adding the proxy to the API
 
@@ -27,7 +27,7 @@ The app needs to have some basic functionalities
 - the ability to search your contacts
 
 We have some resources at our disposal, a set of (semi) complete wireframes from a designer, and a RESTFUL JSON api that implements search and pagination. The rest is up to you.
-Feel free to get as complicated as you so desire, keeping in mind the timelimit. 
+Feel free to get as complicated as you so desire, keeping in mind the time limit.
 
 
 ## Wireframes
