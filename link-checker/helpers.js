@@ -23,16 +23,16 @@ exports.multiplePages = function() {
             page('/account', '2017-01-03'),
             ]),
         expected: [{
-            url: 'index',
+            url: '/index',
             lastmod: '2017-01-01'
         }, {
-            url: 'about',
+            url: '/about',
             lastmod: '2017-01-01'
         }, {
-            url: 'team',
+            url: '/team',
             lastmod: '2017-03-01'
         }, {
-            url: 'account',
+            url: '/account',
             lastmod: '2017-01-03'
         }]
     };
@@ -90,7 +90,7 @@ exports.pagesWithLinks = function() {
             url: '/account',
             lastmod: '2017-01-03',
         }, {
-            url: '/acount/cancel',
+            url: '/account/cancel',
             lastmod: '2017-01-05',
         }]
     };
