@@ -10,11 +10,19 @@ to run the API server, `npm install`, `npm start` -- you may need to `npm instal
 
 ## Getting Started
 
-2 Frameworks are setup and configured for use already, feel free to also do the challenge in Vuejs or Knockout/Backbone if you can set things up
+3 Frameworks are setup and configured for use already, feel free to also do the challenge in Vuejs or Knockout/Backbone if you can set things up
+
+### React
 
 Create react app is setup in the `client-react` folder, you should be able to run `npm install`, `npm start` in there. I haven't ejected, feel free to eject if you need to
 
-ng-cli is set up with proxy server as well, its in the `client-react` folder, `npm install`, `npm start` in there. I have not modified the starting config other than adding the proxy to the API
+### Angular
+
+ng-cli is set up with proxy server as well, its in the `client-ng` folder, `npm install`, `npm start` in there. I have not modified the starting config other than adding the proxy to the API
+
+### Ember
+
+Ember is set up with proxy server as well, its in the `client-ember` folder, `npm install`, `npm start` in there. I have not modified the starting config other than adding the proxy to the API
 
 ## Goals
 
