@@ -44,4 +44,7 @@ app.put('/api/oddballs/:id', (req,res,next) => {
   }
 
 })
-app.listen(5000)
+const PORT = 3001;
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`)
+})
