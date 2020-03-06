@@ -9,7 +9,7 @@ What challenge should I be doing?
 - Rails Engineers should try [EFIN Calculator](/efin-calculator#efin-calculator)
 - Front End Engineers [Address Book](/address-book)
 - Devops Engineers [Server Config](/server-config)
-- Node Engineers should try [Analytics Server](/analytics-server) or [Link Checker](/link-checker)
+- Node Engineers should try [Analytics Server](/analytics-server), [Link Checker](/link-checker), or [Friend of Friends](/friends-of-friends)
 
 ## Getting help
 
