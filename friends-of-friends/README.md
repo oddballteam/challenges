@@ -1,14 +1,29 @@
-## Friends of Friends:
+# Friends of Friends
 
-For this challenge, we are using the user list json provided to show a collection of common friends of friends given two user guids.
+## Introduction
 
-## Instructions
-Write a script, that reads the friends-of-friends.json file, and given the below known sets, returns the total number and first and last name of common friends.
+For this challenge, you will be provided `friend-list.json`, which describes a list of users, which each have a unique `id`, some descriptive properties like `email`, and a list of `friends`.
 
+## The Challenge
+Write a program that, given 2 user `id`s, uses the `friend-list.json` file and returns the common friends between the specified users.
+
+The program should print:
+
+- The first and last name of those common friends, alphabetized by first name.
+- The total number of common friends between the specified users.
+
+## Notes
+
+- You're free to hard-code the 2 user `id`s that you wish to compare
+
+```javascript
+const users = ["3986024a-b38c-41d4-966f-8bc56d23eb33", "abbd689e-2a45-4faf-bc5e-61ee3e0a0b4e"]; // 41 Friends in common
+// const users = ["ba2be3ec-71a7-4593-bc5c-89a3cb7e2ad0", "abbd689e-2a45-4faf-bc5e-61ee3e0a0b4e"]; // 47 Friends in common
 ```
-const users = ["3986024a-b38c-41d4-966f-8bc56d23eb33", "abbd689e-2a45-4faf-bc5e-61ee3e0a0b4e"] // 41 Friends in common
-//const users = ["ba2be3ec-71a7-4593-bc5c-89a3cb7e2ad0", "abbd689e-2a45-4faf-bc5e-61ee3e0a0b4e"] // 47 Friends in common
-```
-- Note: There may be duplicates in the friend's lists, make sure to account for them.
-- These do not need to be run together, you can run it two times, commenting out each unused sets.
-- Bonus, use a CLI tool to pass these in as arguments
+
+- The program only needs to compare 2 users at a time. Feel free to comment and uncomment the 2 provided test cases and run the program twice.
+- There may be duplicates in the friends lists, make sure to account for them.
+
+## Bonus
+- Have the program accept command line arguments for the 2 user `id`s
+  - e.g. `node friends-of-friends.js 3986024a-b38c-41d4-966f-8bc56d23eb33 abbd689e-2a45-4faf-bc5e-61ee3e0a0b4e`
