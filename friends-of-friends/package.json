@@ -1,0 +1,22 @@
+{
+  "name": "friends-of-friends",
+  "version": "1.0.0",
+  "description": "Oddball.io programming challenge",
+  "main": "friends-of-friends.js",
+  "scripts": {
+    "test": "mocha '**/*.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oddballteam/challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oddballteam/challenges/issues"
+  },
+  "homepage": "https://github.com/oddballteam/challenges#readme",
+  "dependencies": {
+    "mocha": "^7.1.0"
+  }
+}

@@ -2,28 +2,41 @@
 
 ## Introduction
 
-For this challenge, you will be provided `friend-list.json`, which describes a list of users, which each have a unique `id`, some descriptive properties like `email`, and a list of `friends`.
+For this challenge, we are providing `friend-list.json`. This file describes a list of users which each have a unique `id`, some descriptive properties like `email`, and a list of `friends`.
 
 ## The Challenge
-Write a program that, given 2 user `id`s, uses the `friend-list.json` file and returns the common friends between the specified users.
+- Write a program that, given 2 user `id`s, parses the `friend-list.json` file and returns a sorted array of common friends for the specified users.
+- Sort the results by the `id` property.
 
-The program should print:
-
-- The first and last name of those common friends, alphabetized by first name.
-- The total number of common friends between the specified users.
-
-## Notes
-
-- You're free to hard-code the 2 user `id`s that you wish to compare
-
-```javascript
-const users = ["3986024a-b38c-41d4-966f-8bc56d23eb33", "abbd689e-2a45-4faf-bc5e-61ee3e0a0b4e"]; // 41 Friends in common
-// const users = ["ba2be3ec-71a7-4593-bc5c-89a3cb7e2ad0", "abbd689e-2a45-4faf-bc5e-61ee3e0a0b4e"]; // 47 Friends in common
+Sample Output:
+```json
+[
+  {
+    "first_name": "Zaneta",
+    "last_name": "D'Cruze",
+    "id": "07d71f0d-1323-4fe8-98b3-2f417b1c6f3b"
+  },
+  {
+    "first_name": "Callie",
+    "last_name": "Mackett",
+    "id": "08a73856-f623-4a82-beb4-567902fa6228"
+  },
+  {
+    "first_name": "Tiphani",
+    "last_name": "Andreu",
+    "id": "14a70022-0b75-4754-b9ac-6aca319e3fa5"
+  }
+]
 ```
 
-- The program only needs to compare 2 users at a time. Feel free to comment and uncomment the 2 provided test cases and run the program twice.
-- There may be duplicates in the friends lists, make sure to account for them.
+## Testing your output
 
-## Bonus
-- Have the program accept command line arguments for the 2 user `id`s
-  - e.g. `node friends-of-friends.js 3986024a-b38c-41d4-966f-8bc56d23eb33 abbd689e-2a45-4faf-bc5e-61ee3e0a0b4e`
+```bash
+cd friends-of-friends # Enter friends-of-friends
+npm install # Install dependencies
+npm run test # Run the tests
+```
+
+## **Implementation Notes**
+
+- There may be duplicates in the `friends` property of each user. The result set should only include unique users.
