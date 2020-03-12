@@ -5,7 +5,7 @@
 For this challenge, we are providing `friend-list.json`. This file describes a list of users which each have a unique `id`, some descriptive properties like `email`, and a list of `friends`.
 
 ## The Challenge
-- Write a program that, given 2 user `id`s, parses the `friend-list.json` file and returns a sorted array of common friends for the specified users.
+- Write a program that, given the `id` of two users, parses the `friend-list.json` file and returns a sorted array of common friends for those users.
 - Sort the results by the `id` property.
 
 Sample Output:
