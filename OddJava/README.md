@@ -1,6 +1,10 @@
 # Oddball Coding Challenge
 
-Feel free to use tools like Google, StackOverflow, and reference manuals when completing this challenge.
+Feel free to use tools like Google, StackOverflow, and reference manuals when completing this challenge. \
+A primary part of this challenge is parsing csv files. For convenience, we've included common CSV packages as part of the build, but their use is not required.
+
+-   [Apache Commons CSV](https://commons.apache.org/proper/commons-csv/user-guide.html#Example:_Parsing_an_Excel_CSV_File)
+-   [OpenCSV](http://opencsv.sourceforge.net/#reading)
 
 ## Overview
 
