@@ -8,6 +8,11 @@ class Api::OddballsController < ApplicationController
   end
 
   def search
+    if params[:q].blank?
+      render json: { error: "Please send a query string paramater 'q'", status: 400 }
+      return
+    end
+
     search_term = "%#{params[:q]}%"
     render json: Oddball.where('first_name LIKE ? OR last_name LIKE ?', search_term, search_term)
   end
