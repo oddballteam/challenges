@@ -1,0 +1,2 @@
+class Oddball < ApplicationRecord
+end
