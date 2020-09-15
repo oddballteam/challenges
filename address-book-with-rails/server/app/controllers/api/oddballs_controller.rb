@@ -5,11 +5,13 @@ class Api::OddballsController < ApplicationController
 
   def show
     render json: Oddball.find(params[:id])
+  rescue ActiveRecord::RecordNotFound => e
+    render json: { message: e.message }, status: 400
   end
 
   def search
     if params[:q].blank?
-      render json: { error: "Please send a query string paramater 'q'", status: 400 }
+      render json: { error: "Please send a query string paramater 'q'" }, status: 400
       return
     end
 
