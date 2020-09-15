@@ -1,6 +1,6 @@
 class Api::OddballsController < ApplicationController
   def index
-    render json: Oddball.first(100)
+    render json: Oddball.offset(params[:offset] || 0).limit(100)
   end
 
   def show
