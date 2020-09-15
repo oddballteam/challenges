@@ -4,13 +4,13 @@
 
 `nodejs` installed
 
-to run the API server, `npm install`, `npm start` -- you may need to `npm install sqlite3@latest` if you have errors starting the API
+to run the API server, `rails server -p 3001`.  You may first need to run `bundle install` or run it with `bundle exec rails server -p 3001`.
 
 [API docs here](#api)
 
 ## Getting Started
 
-3 Frameworks are setup and configured for use already, feel free to also do the challenge in Vuejs or Knockout/Backbone if you can set things up
+3 Frameworks are setup and configured for use already.
 
 ### React
 
@@ -44,11 +44,6 @@ Default State
 
 ![](mockups/default.png)
 
-After tapping a user, you should be able to hit edit, change their information and it saves and updates as well
-
-![](mockups/expanded.png)
-
-
 Searching the address book,
 
 ![](mockups/Searching.png)
@@ -68,7 +63,7 @@ Searching the address book,
 2 endpoints
 
 - GET `api/oddballs` accepts an optional `offset` query string parameter and returns 100 people.
+- GET `api/oddballs/:id`, returns information for a specific oddball
 - GET `api/search` requires a `q` query string parameter and returns oddballs whose first or lastname fuzzy matches that query
-- PUT `api/oddballs/:id`, updates an oddballs information in the DB
 
-All endpoints return json and the PUT and POST endpoints accept json
+All endpoints return json
