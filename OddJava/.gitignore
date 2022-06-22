@@ -3,6 +3,12 @@
 
 # Ignore Gradle build output directory
 build
+bin
 
-# Ignore VSCode config
+# Ignore IDE files
 .vscode
+.project
+.classpath
+
+# Ignore buildship settings directory
+.settings

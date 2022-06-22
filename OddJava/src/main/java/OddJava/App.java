@@ -6,15 +6,6 @@
  */
 package OddJava;
 
-import org.apache.commons.csv.*;
-import com.opencsv.*;
-
 public class App {
-    public String getPatient() {
-        return "Hello patient.";
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new App().getPatient());
-    }
+    public static void main(String[] args) {}
 }
