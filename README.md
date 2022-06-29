@@ -10,3 +10,4 @@ What challenge should I be doing?
 - Front End Engineers [Address Book](/address-book)
 - Devops Engineers [Server Config](/server-config)
 - Node Engineers should try [Analytics Server](/analytics-server), [Link Checker](/link-checker), or [Friend of Friends](/friends-of-friends)
+- Java Engineers should try [OddJava](/OddJava)

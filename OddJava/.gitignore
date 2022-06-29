@@ -9,6 +9,7 @@ bin
 .vscode
 .project
 .classpath
+.idea
 
 # Ignore buildship settings directory
 .settings
