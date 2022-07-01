@@ -1,14 +1,14 @@
 # Oddball Coding Challenge
 
-Feel free to use tools like Google, StackOverflow, and reference manuals when completing this challenge. \
-A primary part of this challenge is parsing csv files. For convenience, we've included common CSV packages as part of the build, but their use is not required.
-
-- [Apache Commons CSV](https://commons.apache.org/proper/commons-csv/user-guide.html#Example:_Parsing_an_Excel_CSV_File)
-- [OpenCSV](http://opencsv.sourceforge.net/#reading)
+The core of this challenge is to build a REST API using Spring Boot Web and parse the payload data. \
+For convenience, we've included common libraries as part of the build, but their use is not required. \
+Feel free to import any libraries you're comfortable with and resources like Google, StackOverflow, or \
+documentation when completing this challenge.
 
 ## Overview
 
-As health care providers, we're concerned with the moods and stress levels of our patients. We have historical data available in CSV files that we want to analyze.
+As health care providers, we're concerned with the moods and stress levels of our patients. \
+We have historical data available in CSV files that we want to analyze.
 
 We're going to define a bad day as a day when:
 
@@ -18,20 +18,25 @@ We're going to define a bad day as a day when:
 
 ## Challenge
 
-Using your programming language of choice, write a program that reads in the data from the CSV files and can determine the following:
+Build a Java application using the Spring Boot framework to fetch mocked data resources from a REST endpoint. \
+After fetching the data, determine the following:
 
-- All users who had two or more bad days in the week of 2017-05-07.
-- Find the users with the 5 longest streaks of consecutive bad days. 
-    - For each of these streaks, return the username, the number of bad days, and the starting date of that streak.
+- Find which users that had two or more bad days in the week of 2017-05-07 and return
+  - Username
+  - Number of bad days each patient had for the week
+- Find the users with the 5 longest streaks of consecutive bad days and return for each bad day streak
+    - Username
+    - Number of bad days
+    - Starting date of that streak
 
-## Output
-
-Print the patient's username and the number of bad days each patient had for the week, sorted in decreasing order of bad days.
+**Output Format**
+- Print all data to console
+- Sort all output in decreasing order of bad days
 
 ## Resource files
 
-Use the files found in ./src/main/resources as data for this OddChallenge
+Use the files found in ./src/main/resources/data for this OddChallenge
 
-[users.csv](https://oddball.io/users.csv), a CSV file containing fake users.  
-[moods.csv](https://oddball.io/moods.csv), a CSV file containing their moods.  
-[stress.csv](https://oddball.io/stress.csv), a CSV file containing their stress levels.
+[users.csv](./src/main/resources/data/users.csv), a CSV file containing fake users.  
+[moods.csv](./src/main/resources/data/moods.csv), a CSV file containing their moods.  
+[stress.csv](./src/main/resources/data/stress.csv), a CSV file containing their stress levels.
