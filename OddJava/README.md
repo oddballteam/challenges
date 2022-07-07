@@ -1,42 +1,51 @@
-# Oddball Coding Challenge
+# OddJava Overview
 
-The core of this challenge is to build a REST API using Spring Boot Web and parse the payload data. \
+The core of this challenge is to build a simple REST API using Spring Boot and parse the payload data. \
 For convenience, we've included common libraries as part of the build, but their use is not required. \
 Feel free to import any libraries you're comfortable with and resources like Google, StackOverflow, or \
 documentation when completing this challenge.
 
-## Overview
-
+---
+## Challenges 
 As health care providers, we're concerned with the moods and stress levels of our patients. \
-We have historical data available in CSV files that we want to analyze.
+We have a simple H2 database as our data source to generate "Bad Day Reports". 
 
-We're going to define a bad day as a day when:
+---
+### Spring Boot
+Build an application using the Spring Boot framework to fetch and save data. \
+The model and database repositories are already created. You provide the API. \
+Make improvements as you see fit, but prioritize getting everything up and running first!
+
+---
+### Data Parsing
+After fetching data, parse the contents to produce "Bad Day Reports"
+
+A **Bad Day** is defined as when:
 
 - A user's mood is 1 or 2
 - A user's mood is a 3, but their stress for that same day is a 4 or 5
 - If we don't have mood or stress data for a given day, we'll assume it's neutral (3)
 
-## Challenge
+#### Bad Day Reports
+1. Find which users that had two or more bad days in the week of 2017-05-07 and return
+   - Username
+   - Number of bad days each patient had for the week
 
-Build a Java application using the Spring Boot framework to fetch mocked data resources from a REST endpoint. \
-After fetching the data, determine the following:
+2. Find the five longest consecutive Bad Day streaks and return for each
+   - Username
+   - Number of bad days
+   - Starting date of that streak
 
-- Find which users that had two or more bad days in the week of 2017-05-07 and return
-  - Username
-  - Number of bad days each patient had for the week
-- Find the users with the 5 longest streaks of consecutive bad days and return for each bad day streak
-    - Username
-    - Number of bad days
-    - Starting date of that streak
-
-**Output Format**
-- Print all data to console
+#### Output Format
+- Nothing fancy, print reports to console
 - Sort all output in decreasing order of bad days
 
-## Resource files
+---
+## Resource Files
+View your H2 database at [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
 
-Use the files found in ./src/main/resources/data for this OddChallenge
+For reference, resource data files can be found in `main/resources/data`
 
-[users.csv](./src/main/resources/data/users.csv), a CSV file containing fake users.  
-[moods.csv](./src/main/resources/data/moods.csv), a CSV file containing their moods.  
-[stress.csv](./src/main/resources/data/stress.csv), a CSV file containing their stress levels.
+[users.csv](./src/main/resources/data/users.csv), a CSV file containing fake users  
+[moods.csv](./src/main/resources/data/moods.csv), a CSV file containing their moods  
+[stress.csv](./src/main/resources/data/stress.csv), a CSV file containing their stress levels

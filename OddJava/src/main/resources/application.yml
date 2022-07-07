@@ -1,0 +1,21 @@
+debug: false
+spring:
+  output:
+    ansi:
+      enabled: always
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+      dialect: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:mem:oddballdb
+    username: oddball
+    password:
+    driverClassName: org.h2.Driver
+    configuration:
+      maximum-pool-size: 30
