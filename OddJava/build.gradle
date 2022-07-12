@@ -18,6 +18,12 @@ repositories {
 	mavenCentral()
 }
 
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
 dependencies {
 	implementation 'junit:junit:4.13.2'
 	compileOnly 'org.projectlombok:lombok'
