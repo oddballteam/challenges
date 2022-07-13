@@ -6,7 +6,6 @@ plugins {
 
 group = 'com.oddball'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
 
 configurations {
 	compileOnly {
@@ -16,6 +15,12 @@ configurations {
 
 repositories {
 	mavenCentral()
+}
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(11)
+	}
 }
 
 dependencies {
