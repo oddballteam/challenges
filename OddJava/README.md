@@ -1,3 +1,36 @@
+## Setup
+Clone project repositiory and import the `OddJava` file directory as a new Gradle Project in your IDE
+```
+git clone https://github.com/oddballteam/challenges.git
+```
+
+
+
+## Command Line 
+Compile and run using command line instructions
+
+Navigate to OddJava directory through terminal
+```cd /path/to/cloned/repository/challenges/OddJava```
+
+Build
+```
+// Windows
+gradlew.bat build
+
+// Mac/Linux
+./gradlew build
+```
+
+Boot Application
+```
+// Windows
+gradlew.bat bootRun
+
+// Mac/Linux
+./gradlew bootRun
+
+```
+
 # OddJava Overview
 
 The core of this challenge is to build a simple REST API using Spring Boot and parse the payload data. \
