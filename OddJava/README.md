@@ -76,6 +76,8 @@ A **Bad Day** is defined as when:
 ---
 ## Resource Files
 View your H2 database at [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
+ - username: oddball
+ - password: oddball
 
 For reference, resource data files can be found in `main/resources/data`
 
