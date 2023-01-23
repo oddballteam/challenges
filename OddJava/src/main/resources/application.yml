@@ -15,7 +15,7 @@ spring:
   datasource:
     url: jdbc:h2:mem:oddballdb
     username: oddball
-    password:
+    password: oddball
     driverClassName: org.h2.Driver
     configuration:
       maximum-pool-size: 30
