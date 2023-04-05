@@ -34,7 +34,7 @@ gradlew.bat bootRun
 # React Application Overview
 
 
-navigate to the SpringReact directory and run the following command to start the application
+navigate to the `/src/main/resources` directory and run the following command to start the application
 ```
 npm install
 npm start
