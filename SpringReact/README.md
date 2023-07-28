@@ -1,5 +1,5 @@
 ## Setup
-Clone project repositiory and import the `OddJava` file directory as a new Gradle Project in your IDE
+Clone project repositiory and import the `SpringReact` file directory as a new Gradle Project in your IDE
 ```
 git clone https://github.com/oddballteam/challenges.git
 ```
@@ -43,7 +43,7 @@ npm start
 The proxy server has been configured and any `fetch` requests will be forwarded to the Spring Boot application running on port 8080.
 
 
-# OddJava Overview
+# SpringReact Overview
 
 The core of this challenge is to build a simple REST API using Spring Boot and parse the payload data, then display that data in a react application. 
 For convenience, we've included common libraries as part of the build, but their use is not required. \

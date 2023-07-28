@@ -6,8 +6,8 @@ This is an open-book test, so Google away, but please don't copy your work from 
 
 What challenge should I be doing?
 
-- Rails Engineers should try [EFIN Calculator](/efin-calculator#efin-calculator)
+- Rails Engineers [Moods and Stresses](https://oddball-site.firebaseapp.com/challenge/)
 - Front End Engineers [Address Book](/address-book)
 - Devops Engineers [Devops Hello World](https://github.com/oddballteam/devops-challenge)
-- Node Engineers should try [Analytics Server](/analytics-server), [Link Checker](/link-checker), or [Friend of Friends](/friends-of-friends)
-- Java Engineers should try [OddJava](/OddJava)
+- Node Engineers [Analytics Server](/analytics-server), [Link Checker](/link-checker), or [Friend of Friends](/friends-of-friends)
+- Java Engineers [OddJava](/OddJava)
