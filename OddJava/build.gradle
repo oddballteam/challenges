@@ -1,11 +1,11 @@
 plugins {
-	id 'org.springframework.boot' version '2.7.1'
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'org.springframework.boot' version '3.3.2'
+	id 'io.spring.dependency-management' version '1.1.6'
 	id 'java'
 }
 
 group = 'com.oddball'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.2-SNAPSHOT'
 
 configurations {
 	compileOnly {
@@ -19,25 +19,23 @@ repositories {
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(11)
+		languageVersion = JavaLanguageVersion.of(21)
 	}
 }
 
 dependencies {
-	implementation 'junit:junit:4.13.2'
+	annotationProcessor 'org.projectlombok:lombok'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	runtimeOnly 'com.h2database:h2'
-	implementation 'org.springframework.boot:spring-boot-starter-parent:2.7.1'
+	runtimeOnly 'com.h2database:h2:2.3.230'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'com.opencsv:opencsv:5.6'
-	implementation 'org.apache.commons:commons-csv:1.9.0'
+	implementation 'org.apache.commons:commons-csv:1.11.0'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.postgresql:postgresql'
+	testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-tasks.named('test') {
+test {
 	useJUnitPlatform()
 }

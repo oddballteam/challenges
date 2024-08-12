@@ -1,18 +1,14 @@
 package com.oddball.challenges;
 
-import com.oddball.challenges.stress.Stress;
-import com.oddball.challenges.stress.StressRepository;
-import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.List;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
-@RunWith(SpringRunner.class)
+import com.oddball.challenges.stress.Stress;
+import com.oddball.challenges.stress.StressRepository;
+import java.util.List;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+
 @DataJpaTest
 public class StressRepositoryTest {
 
@@ -20,7 +16,7 @@ public class StressRepositoryTest {
     private StressRepository stressRepository;
 
     @Test
-    public void whenCalled_thenCorrectNumberOfStress() throws Exception {
+    public void whenCalled_thenCorrectNumberOfStress() {
         List<Stress> stress = (List<Stress>) stressRepository.findAll();
         assertThat(stress.size()).isEqualTo(150417);
     }
