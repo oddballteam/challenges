@@ -44,7 +44,7 @@ The Marvel API requires a hash based on a time stamp, the public key, and the pr
 
 ## Model
 
-Do to the complexity of the Marvel API Characters and Character models, we have included the models ahead of time for the canidate to use. Make use of them how you see fit.
+Due to the complexity of the Marvel API Characters and Character models, we have included the models ahead of time for the candidate to use. Make use of them how you see fit.
 
 ## Completion Criteria
 
