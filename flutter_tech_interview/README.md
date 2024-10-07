@@ -22,7 +22,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Requirements
 
-This project is designed to test a canidates Flutter/Dart knowledge. The project is designed around the [Marvel Api](https://developer.marvel.com) and requires the public and private keys generated for the canidate to access the API.
+This project is designed to test a candidates Flutter/Dart knowledge. The project is designed around the [Marvel Api](https://developer.marvel.com) and requires the public and private keys generated for the candidate to access the API.
 
 The Marvel API requires a hash based on a time stamp, the public key, and the private key. Here is a quick way to set the parameters for that call:
 

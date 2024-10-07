@@ -1,50 +1,43 @@
-# Welcome to your Expo app 👋
+# Technical Interview
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Mobile position React Native intervew project for Oddball
 
-## Get started
+## Requirements for running the project
 
-1. Install dependencies
+1. An IDE or Editor to run react native in 
+1. React Native installed and configured
+1. iOS or Android Simulator to view application
+1. An set of Marvel API keys. They require a user to have a public and private key, as well as creating a hash to send to their API.
 
-   ```bash
-   npm install
-   ```
+## Requirements
 
-2. Start the app
+This project is designed to test a candidates React Native knowledge. The project is designed around the [Marvel Api](https://developer.marvel.com) and requires the public and private keys generated for the candidate to access the API.
 
-   ```bash
-    npx expo start
-   ```
+The Marvel API requires a hash based on a time stamp, the public key, and the private key. Here is a quick way to set the parameters for that call (This code exists in `app/util/index.ts`):
 
-In the output, you'll find options to open the app in a
+```
+    export function setQueryParams(limit: number): QueryParams {
+      let ts = new Date().getTime();
+      let hash = Md5.hashStr(utf8.encode(ts + "your private key" + "your public key"));
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+      return {
+        apikey: "your public key",
+        ts: ts.toString(),
+        hash: hash,
+        limit: limit.toString()
+      }
+    }
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Model
 
-## Learn more
+Do to the complexity of the Marvel API Characters and Character models, we have included the models ahead of time for the candidate to use. Make use of them how you see fit. (Located at `app/models/*`
 
-To learn more about developing your project with Expo, look at the following resources:
+## Completion Criteria
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Successfully make a call to the Marvel API and return a list of characters
+1. Create a list view that displays the list of characters returned
+1. Being able to tap on an item in the list and see detail new view
+1. Making a second call to get the characters detail information
+1. Utilizing a state managment solution
+1. Writing of tests to validate logic
