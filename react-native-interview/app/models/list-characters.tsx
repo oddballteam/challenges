@@ -94,7 +94,12 @@ export enum URLType {
 // Converts JSON strings to/from your types
 // and asserts the results of JSON.parse at runtime
 export class Convert {
-  public static toCharacterResponse(json: string): CharactersResponse {
+  //axios returns an object not a string
+  public static toCharactersResponseFromObject(res: object): CharactersResponse {
+    return cast(res, r("CharactersResponse"));
+  }
+
+  public static toCharactersResponse(json: string): CharactersResponse {
     return cast(JSON.parse(json), r("CharactersResponse"));
   }
 
