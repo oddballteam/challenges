@@ -1,6 +1,6 @@
 # Technical Interview
 
-Mobile position Flutter intervew project for Oddball
+Mobile position Flutter interview project for Oddball
 
 ## Requirements for running the project
 
@@ -9,7 +9,7 @@ Mobile position Flutter intervew project for Oddball
 1. iOS or Android Simulator to view application
 1. An set of Marvel API keys. They require a user to have a public and private key, as well as creating a hash to send to their API.
 
-Run `flutter doctor` after the install and configuation to make sure that everything is configured correctly and Flutter should run. If you install Flutter through VScode extensions is should include all the Dart supporting installations as well.
+Run `flutter doctor` after the install and configuration to make sure that everything is configured correctly and Flutter should run. If you install Flutter through VScode extensions is should include all the Dart supporting installations as well.
 
 A few resources to get you started if this is your first Flutter project:
 

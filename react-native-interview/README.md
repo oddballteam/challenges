@@ -1,6 +1,6 @@
 # Technical Interview
 
-Mobile position React Native intervew project for Oddball
+Mobile position React Native interview project for Oddball
 
 ## Requirements for running the project
 
