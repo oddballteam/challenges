@@ -2,7 +2,7 @@
 Feel free to use tools like Google, StackOverflow, and reference manuals when completing this challenge.
 
 ## Overview
-As health care providers, we're concerned with the moods and stress levels of our patients. We have historical data available in CSV files that we want to analyze.
+As health care providers, we're concerned with the moods and stress levels of our patients. We have historical data available in CSV / JSON files that we want to analyze.
 
 We're going to define a bad day as a day when:
   - a user's mood is 1 or 2
@@ -11,9 +11,9 @@ We're going to define a bad day as a day when:
 
 ## Steps
 1. Download Data files
-    - users.csv, a CSV file containing fake users.
-    - moods.csv, a CSV file containing their moods.
-    - stress.csv, a CSV file containing their stress levels.
+    - users.csv/json, afile containing fake users.
+    - moods.csv/json, a file containing their moods.
+    - stress.csv/json, a file containing their stress levels.
 2. Using GO, write a program that reads in the data from the CSV or JSON files and can determine the following:
     - All users who had two or more bad days in the week of 2017-05-07.
       - For output, show their usernames and the number of bad days they had that week, sorted in decreasing order of bad days.
