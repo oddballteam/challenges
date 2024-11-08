@@ -1,4 +1,4 @@
-# Oddball Coding Screen
+# Moods and Stresses
 Feel free to use tools like Google, StackOverflow, and reference manuals when completing this challenge.
 
 ## Overview
