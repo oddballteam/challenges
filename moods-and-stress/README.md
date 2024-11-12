@@ -11,7 +11,7 @@ We're going to define a bad day as a day when:
 
 ## Steps
 1. Download Data files
-    - users.csv/json, afile containing fake users.
+    - users.csv/json, a file containing fake users.
     - moods.csv/json, a file containing their moods.
     - stress.csv/json, a file containing their stress levels.
 2. Write a program that reads in the data from the CSV or JSON files and can determine the following:
