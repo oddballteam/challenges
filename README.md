@@ -13,4 +13,4 @@ What challenge should I be doing?
 - Java Engineers [OddJava](/OddJava)
 - Flutter Engineers [Marvel Flutter](/flutter_tech_interview)
 - React Native Engineers [Marvel React Native](/react-native-interview)
-- Go Engineers [Moods and Stress](/moods-and-stress-go)
+- Go Engineers [Moods and Stress](/moods-and-stress)

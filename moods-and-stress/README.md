@@ -14,7 +14,7 @@ We're going to define a bad day as a day when:
     - users.csv/json, afile containing fake users.
     - moods.csv/json, a file containing their moods.
     - stress.csv/json, a file containing their stress levels.
-2. Using GO, write a program that reads in the data from the CSV or JSON files and can determine the following:
+2. Write a program that reads in the data from the CSV or JSON files and can determine the following:
     - All users who had two or more bad days in the week of 2017-05-07.
       - For output, show their usernames and the number of bad days they had that week, sorted in decreasing order of bad days.
     - Find the 5 longest streaks of consecutive bad days.
