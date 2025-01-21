@@ -10,3 +10,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'address-book';
 }
+fetch('/api/oddballs').then(resp => resp.json()).then(data => {
+  console.log(data);
+});
+
