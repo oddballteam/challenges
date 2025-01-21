@@ -36,7 +36,7 @@ The app needs to have some basic functionalities
 - the ability to delete a contact
 - the ability to search your contacts
 
-We have some resources at our disposal, a set of (semi) complete wireframes from a designer, and a RESTFUL JSON api that implements search and pagination. The rest is up to you.
+We have some resources at our disposal, a set of (semi) complete wireframes from a designer, and a RESTFUL JSON api. The rest is up to you.
 Feel free to get as complicated as you so desire, keeping in mind the time limit.
 
 
