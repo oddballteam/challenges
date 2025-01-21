@@ -19,6 +19,7 @@ documentation when completing this challenge.
   - `./gradlew build` (For windows use `gradlew.bat build`)
   - `./gradlew bootRun` (For windows use `gradlew.bat bootRun`)
 - Frontend
+  - ** Note: ** We've added a proxy configuration (see `./frontend/proxy.conf.json` so that angular automatically maps to the backend when running to help speed things up. An example call using `fetch` exists in the app component that logs to the console.)
   - `cd frontend`
   - `npm install`
   - `npm start`
