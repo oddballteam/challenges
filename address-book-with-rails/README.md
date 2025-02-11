@@ -4,7 +4,9 @@
 
 `nodejs` installed
 
-to run the API server, `rails server -p 3001`.  You may first need to run `bundle install` or run it with `bundle exec rails server -p 3001`.
+## API server
+
+To run the API server, `rails server -p 3001`.  You may first need to run `bundle install` or run it with `bundle exec rails server -p 3001`.
 
 [API docs here](#api)
 
@@ -56,7 +58,7 @@ Searching the address book,
 - The api takes an offset parameter. Implement either pagination, or some sort of infinite scroll.
 - This design is just a general guideline of what the app needs to do, there are obviously gaps (editing state, delete state) that are missing from the wireframes, use your best judgement
 - Search is crucial for the app. As of now, the api can only search on first and last name
-- You can test the api by [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/60bf8806cd83b8503e2f)
+<!-- - You can test the api by [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/60bf8806cd83b8503e2f) -->
 
 ## API
 
