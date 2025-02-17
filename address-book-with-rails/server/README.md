@@ -1,24 +1,39 @@
-# README
+# Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ensure ruby 3.4.1 is installed and selected
+```
+rvm list
+rvm install 3.4.1
+rvm use 3.4.1
+```
 
-Things you may want to cover:
+If running on an M# mac and seeing this error during install
+```
+Error running '__rvm_make -j8',
+please read /Users/work/.rvm/log/1739373386_ruby-3.3.7/make.log
 
-* Ruby version
+There has been an error while running make. Halting the installation.
+``` 
 
-* System dependencies
+Try below instead
 
-* Configuration
+```
+brew --prefix openssl@3
+rvm install 3.4.1 --with-openssl-dir=your ssl directory path
+```
 
-* Database creation
 
-* Database initialization
+Confirm running the right version
+```
+ruby --version
+```
 
-* How to run the test suite
+Install ruby gems
+```
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Start the server
+```
+rails s -p 3001
+```
