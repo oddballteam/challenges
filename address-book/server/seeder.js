@@ -1,15 +1,16 @@
-var faker = require('faker')
-var knex = require('knex')
+var faker = require("@faker-js/faker");
+var knex = require("knex");
 var db = knex({
-  client: 'sqlite',
+  client: "sqlite",
   connection: {
-    filename: './oddballs.db'
-  }
-})
+    filename: "./oddballs.db",
+  },
+});
 
-var oddballs = []
+var oddballs = [];
 
-db.raw(`CREATE TABLE IF NOT EXISTS oddballs (
+db.raw(
+  `CREATE TABLE IF NOT EXISTS oddballs (
   id INTEGER PRIMARY KEY,
   firstName TEXT ,
   lastName TEXT ,
@@ -22,8 +23,8 @@ db.raw(`CREATE TABLE IF NOT EXISTS oddballs (
   );`
 ).then(() => {
   for (var i = 0; i < 5000; i++) {
-    var firstname = faker.name.firstName()
-    var lastname = faker.name.lastName()
+    var firstname = faker.name.firstName();
+    var lastname = faker.name.lastName();
     oddballs.push({
       firstname,
       lastname,
@@ -32,9 +33,8 @@ db.raw(`CREATE TABLE IF NOT EXISTS oddballs (
       street: faker.address.streetAddress(),
       zip: faker.address.zipCode(),
       phone: faker.phone.phoneNumber(),
-      email: `${firstname}.${lastname}@gmail.com`
-    })
+      email: `${firstname}.${lastname}@gmail.com`,
+    });
   }
-  return Promise.all(oddballs.map(oddball => 
-    db('oddballs').insert(oddball)
-  ))
+  return Promise.all(oddballs.map((oddball) => db("oddballs").insert(oddball)));
+});
