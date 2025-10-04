@@ -4,11 +4,12 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.json())
 
 var db = knex({
-  client: 'sqlite',
+  client: "sqlite",
   connection: {
-    filename: './oddballs.db'
-  }
-})
+    filename: "./oddballs.db",
+  },
+  useNullAsDefault: true,
+});
 var promises = []
 var oddballs = []
 
