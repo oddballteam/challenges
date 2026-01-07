@@ -2,6 +2,7 @@
   "name": "address-book-node",
   "version": "1.0.0",
   "description": "Address Book API",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

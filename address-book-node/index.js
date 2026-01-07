@@ -1,6 +1,6 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const knex = require('knex');
+import express from 'express';
+import bodyParser from 'body-parser';
+import knex from 'knex';
 
 const app = express();
 const PORT = 3001;
