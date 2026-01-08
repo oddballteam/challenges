@@ -37,7 +37,7 @@ This will create `oddballs.db` with the following schema:
 ### Start Server
 
 ```bash
-npm start
+npm run dev
 ```
 
 The server will run on `http://localhost:3001`

@@ -1,5 +1,5 @@
-const knex = require('knex');
-const faker = require('faker');
+import knex from 'knex';
+import faker from 'faker';
 
 // Initialize Knex with SQLite
 const db = knex({
