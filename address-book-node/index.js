@@ -1,5 +1,4 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import knex from 'knex';
 
 const app = express();
@@ -15,7 +14,7 @@ const db = knex({
 });
 
 // Middleware
-app.use(bodyParser.json());
+app.use(express.json());
 
 // GET /api/oddballs - Returns list of oddballs (limit 100)
 app.get('/api/oddballs', async (req, res) => {
