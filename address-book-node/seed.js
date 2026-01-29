@@ -1,5 +1,5 @@
 import knex from 'knex';
-import faker from 'faker';
+import { faker } from '@faker-js/faker';
 
 // Initialize Knex with SQLite
 const db = knex({
@@ -42,17 +42,17 @@ async function seed() {
     const oddballs = [];
     
     for (let i = 0; i < 5000; i++) {
-      const firstName = faker.name.firstName();
-      const lastName = faker.name.lastName();
-      
+      const firstName = faker.person.firstName();
+      const lastName = faker.person.lastName();
+
       oddballs.push({
         firstName,
         lastName,
-        street: faker.address.streetAddress(),
-        city: faker.address.city(),
-        state: faker.address.stateAbbr(),
-        zip: faker.address.zipCode(),
-        phone: faker.phone.phoneNumber(),
+        street: faker.location.streetAddress(),
+        city: faker.location.city(),
+        state: faker.location.state(),
+        zip: faker.location.zipCode(),
+        phone: faker.phone.number(),
         email: `${firstName}.${lastName}@gmail.com`
       });
     }
