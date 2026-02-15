@@ -16,7 +16,7 @@ To run the API server, `npm install`, `npm start` -- you may need to `npm instal
 
 ### React
 
-Create react app is setup in the `client-react` folder, you should be able to run `npm install`, `npm start` in there. I haven't ejected, feel free to eject if you need to
+The react app is contained in the `client-react` folder, you should be able to run `npm install`, `npm start` in there. It is a bare-bones Vite + React app.
 
 ### Angular
 
@@ -39,7 +39,6 @@ The app needs to have some basic functionalities
 We have some resources at our disposal, a set of (semi) complete wireframes from a designer, and a RESTFUL JSON api that implements search and pagination. The rest is up to you.
 Feel free to get as complicated as you so desire, keeping in mind the time limit.
 
-
 ## Wireframes
 
 Default State
@@ -50,13 +49,11 @@ After tapping a user, you should be able to hit edit, change their information a
 
 ![](mockups/expanded.png)
 
-
 Searching the address book,
 
 ![](mockups/Searching.png)
 
- **note** this is not just a client side filter but instead needs to hit the db
-
+**note** this is not just a client side filter but instead needs to hit the db
 
 ## Tips and Tricks
 
